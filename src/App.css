@@ -1,0 +1,122 @@
+/* src/App.css */
+
+/* Import Koho font */
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+
+.App {
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000000; /* Black background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+.home-page {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the buttons */
+}
+
+.title {
+  font-family: 'Koho', sans-serif;
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px; /* Space between title and the top */
+  position: absolute;
+  top: 0; /* Push title to the top */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  margin-top: 100px; /* Space between buttons and title */
+}
+
+.home-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* src/App.css */
+.google-sign-in-button {
+  background-color: #4285f4;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  margin: 20px auto;
+}
+
+.google-sign-in-button:hover {
+  background-color: #357ae8;
+}
+
+/* src/App.css */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.auth-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.firebaseui-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.firebaseui-card-content {
+  padding: 20px;
+}
+
+.firebaseui-idp-button {
+  background-color: #4285f4; /* Google blue */
+  color: white;
+}
+
+.firebaseui-idp-button:hover {
+  background-color: #357ae8;
+}
+
+

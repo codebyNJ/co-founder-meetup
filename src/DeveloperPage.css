@@ -1,0 +1,45 @@
+/* src/DeveloperPage.css */
+.developer-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+}
+
+.developer-title {
+  font-family: 'Koho', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.action-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,237 @@
+/* Founder Dashboard CSS */
+.founder-dashboard {
+    font-family: 'Roboto', sans-serif;
+    background: black;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+/* Transparent Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: black;
+    box-shadow: none;
+    z-index: 1000;
+}
+
+.navbar-left {
+    font-size: 18px;
+    color: white;
+}
+
+.navbar-right {
+    text-align: right;
+}
+
+.post-idea-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-idea-button:hover {
+    background-color: #2980b9;
+}
+
+/* Ideas Cards Container */
+.ideas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+/* No Ideas Warning */
+.no-ideas-warning {
+    color: white;
+    background-color: #e74c3c;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Idea Card Styles */
+.idea-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+.idea-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* View Applications Button */
+.view-applications-button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.view-applications-button:hover {
+    background-color: #27ae60;
+}
+
+/* Post Idea Form */
+.post-idea-form {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    max-width: 400px;
+    width: 100%;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+/* Form Inputs */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-button, .cancel-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+}
+
+.cancel-button {
+    background-color: #e74c3c;
+}
+
+.cancel-button:hover {
+    background-color: #c0392b;
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form Error Message */
+.form-error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Application Modal */
+.application-modal {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    max-width: 600px;
+    width: 90%;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.application-modal h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: black;
+}
+
+.application-details {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+.application-details p {
+    margin: 5px 0;
+}
+
+.close-modal-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.close-modal-button:hover {
+    background-color: #c0392b;
+}
+
+.contact-button {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #2980b9;
+  }
+  
